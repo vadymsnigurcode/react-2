@@ -5,7 +5,11 @@ function App() {
 
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris", "Kyiv"];
 
-  return <div><ListGroup items={items} heading="Cities" /></div>
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  }
+
+  return <div><ListGroup items={items} heading="Cities" onSellectItem={handleSelectItem}/></div>
 }
 
 export default App;
