@@ -1,15 +1,27 @@
 
-import ListGroup from './components/ListGroup';
+// import ListGroup from './components/ListGroup';
+import Alert from "./components/Alert";
+
+// import { Alert } from "reactstrap";
 
 function App() {
 
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris", "Kyiv"];
+  return (
+    <div className="alert alert-primary">
+        <Alert>
+          Hello <span>world</span>
+        </Alert>
 
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  }
+      </div>
+  );
 
-  return <div><ListGroup items={items} heading="Cities" onSellectItem={handleSelectItem}/></div>
+  // let items = ["New York", "San Francisco", "Tokyo", "London", "Paris", "Kyiv"];
+
+  // const handleSelectItem = (item: string) => {
+  //   console.log(item);
+  //}
+
+  // return <div><ListGroup items={items} heading="Cities" onSellectItem={handleSelectItem}/></div>
 }
 
 export default App;
