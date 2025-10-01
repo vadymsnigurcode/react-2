@@ -1,7 +1,7 @@
 
 
 function ListGroup() {
-    const items = [
+    let items = [
         'New York',
         'San Francisco',
         'Tokyo',
@@ -9,6 +9,11 @@ function ListGroup() {
         'Paris',
         'Kyiv'
     ];
+    items = [];
+
+    if (items.length === 0) {
+        return <><h1>List</h1><p>No items found</p><h1/></>;
+    }
     
   return (
     <>
