@@ -1,16 +1,17 @@
 
 // import ListGroup from './components/ListGroup';
-import Alert from "./components/Alert";
+import Button from "./components/Button";
+// import Alert from "./components/Alert";
 
 // import { Alert } from "reactstrap";
 
 function App() {
 
   return (
-    <div className="alert alert-primary">
-        <Alert>
-          Hello <span>world</span>
-        </Alert>
+    <div>
+        <Button color="primary" onClick={()=> console.log("click")}>
+          my button
+        </Button>
 
       </div>
   );
